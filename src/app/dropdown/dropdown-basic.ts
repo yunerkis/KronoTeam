@@ -4,6 +4,6 @@ import {Component} from '@angular/core';
   selector: 'ngbd-dropdown-basic',
   templateUrl: './dropdown-basic.html'
 })
-export class NgbdDropdownBasic {
+export class DropdownBasic {
 }
 
