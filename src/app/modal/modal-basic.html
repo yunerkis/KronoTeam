@@ -1,12 +1,25 @@
 <div class="modal-header">
-    <h4 class="modal-title">Modal title</h4>
+    <h4 class="modal-title">Nombre del Comercio</h4>
     <button type="button" class="close" aria-label="Close" (click)="close()">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
-<div class="modal-body">
-    <p>One fine body&hellip;</p>
-</div>
+    <div class="modal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                </div>
+                <div class="col-sm">
+                    <div class="row">
+                        <div class="col-6 col-sm-12">Rating: <ngb-rating [rate]="3"></ngb-rating></div>
+                        <div class="col-6 col-sm-12">Categoria: </div>
+                        <div class="col-12 col-sm-12">Descripcion: </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <div class="modal-footer">
     <button type="button" class="btn btn-outline-dark" (click)="close()">Close</button>
 </div>
