@@ -8,6 +8,8 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { DropdownBasic } from './dropdown/dropdown-basic';
 import { CardComponent } from './card/card.component';
+import { NgbdModalBasic } from './modal/modal-basic';
+import { NgbdRatingConfig } from './rating/rating-component';
 
 
 @NgModule({
@@ -16,8 +18,11 @@ import { CardComponent } from './card/card.component';
     NavComponent,
     FooterComponent,
     DropdownBasic,
-    CardComponent
+    CardComponent,
+    NgbdModalBasic,
+    NgbdRatingConfig
   ],
+  entryComponents: [NgbdModalBasic],
   imports: [
     BrowserModule,
     NgbModule.forRoot()
