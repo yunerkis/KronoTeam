@@ -1,0 +1,10 @@
+.bg-light {
+    background-color: #d1cbcb !important;
+}
+
+.nav-link{
+    color:#0d8686 !important;
+    &:hover{
+        color: #0ca8a8 !important;
+    }
+}

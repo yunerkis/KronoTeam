@@ -6,7 +6,8 @@ import { Filter } from '../filter.service';
 
 @Component({
   selector: 'card-component',
-  templateUrl: './card.component.html'
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
   @Input() store: {

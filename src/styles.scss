@@ -1,9 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
   padding-top: 5rem;
+  background-color: #efefef;
+  font-family: 'Roboto', sans-serif !important;
+  color: #616161 !important;
 }
 .starter-template {
   padding: 3rem 1.5rem;
@@ -13,6 +17,7 @@ body {
 // button variables
 $button-color:blue;
 $button-hover:#fff;
+$button-hover2: #0d8686;
 $border-size:2px;
 $border-radius:8px;
 
@@ -33,16 +38,13 @@ $border-radius:8px;
 }
 
 // .button styles
-%button{
- 
-}
-
 .button{
- display:inline-block;
- text-align:center;
- text-decoration:none;
- font-weight:bold;
- border-radius:1em;
+background-color: $button-hover;
+display:inline-block;
+text-align:center;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
  &::before {
   font-family: FontAwesome;
   padding-right:.3em;
@@ -52,9 +54,6 @@ $border-radius:8px;
  }
 }
 
-.button-1{
- @include button('\f26e', red);
-}
 .button-2{
  @include button('\f01b', green);
 }
@@ -68,7 +67,22 @@ $border-radius:8px;
  @include button('\f1b4', brown);
 }
 
+.dropdown-item.active, .dropdown-item {
+  &:active{
+    background-color: $button-hover2 !important;
+  }
+  &:hover {
+  background-color: $button-hover2 !important;
+  color: $button-hover;
+  }
+}
 
+a{
+  color:$button-hover2;
+  &:hover{
+    color: #0ca8a8;
+  }
+}
 
 
 
