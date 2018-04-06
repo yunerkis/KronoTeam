@@ -9,3 +9,66 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
+
+// button variables
+$button-color:blue;
+$button-hover:#fff;
+$border-size:2px;
+$border-radius:8px;
+
+// button mixins
+@mixin button($icon, $color){
+ color:$color;
+ border:$border-size solid $color;
+ &::before{
+  content:$icon;
+ }
+ &:hover{
+  background:$color;
+  border:$border-size solid $color;
+ }
+ &:active{
+  background:darken($color, 10%);
+ }
+}
+
+// .button styles
+%button{
+ 
+}
+
+.button{
+ display:inline-block;
+ text-align:center;
+ text-decoration:none;
+ font-weight:bold;
+ border-radius:1em;
+ &::before {
+  font-family: FontAwesome;
+  padding-right:.3em;
+ }
+ &:hover{
+  color:$button-hover;
+ }
+}
+
+.button-1{
+ @include button('\f26e', red);
+}
+.button-2{
+ @include button('\f01b', green);
+}
+.button-3{
+ @include button('\f1b9', purple);
+}
+.button-4{
+ @include button('\f105', teal);
+}
+.button-5{
+ @include button('\f1b4', brown);
+}
+
+
+
+
+

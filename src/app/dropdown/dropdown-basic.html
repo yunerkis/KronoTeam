@@ -1,23 +1,19 @@
 <div class="row">
         <div ngbDropdown class="d-inline-block">
-             <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Categoría</button>
+             <button class="btn button button-4" id="dropdownBasic1" ngbDropdownToggle>Categoría</button>
             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                <button class="dropdown-item">Tienda Mayorista</button>
-                <button class="dropdown-item">Ofertas</button>
-                <button class="dropdown-item">Almacen</button>
-                <button class="dropdown-item">Supermercado</button>
-                <button class="dropdown-item">Todos</button>
+                <button class="dropdown-item" (click)="triggerSector('Tienda Mayorista')" >Tienda Mayorista</button>
+                <button class="dropdown-item" (click)="triggerSector('Ofertas')" >Ofertas</button>
+                <button class="dropdown-item" (click)="triggerSector('Almacen')" >Almacen</button>
+                <button class="dropdown-item" (click)="triggerSector('Supermercado')" >Supermercado</button>
+                <button class="dropdown-item" (click)="triggerSector('')" >Todos</button>
             </div>
         </div>
         <div ngbDropdown class="d-inline-block">
-                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Rating</button>
+                <button class="btn button button-4" id="dropdownBasic1" ngbDropdownToggle>Rating</button>
             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                <button class="dropdown-item"></button>
-                <button class="dropdown-item"><ngb-rating [rate]="1"></ngb-rating></button>
-                <button class="dropdown-item"><ngb-rating [rate]="2"></ngb-rating></button>
-                <button class="dropdown-item"><ngb-rating [rate]="3"></ngb-rating></button>
-                <button class="dropdown-item"><ngb-rating [rate]="4"></ngb-rating></button>
-                <button class="dropdown-item"><ngb-rating [rate]="5"></ngb-rating></button>
+                <button class="dropdown-item" (click)="triggerRating('asc')" >Ascendente</button>
+                <button class="dropdown-item" (click)="triggerRating('desc')" >Descendente</button>
             </div>
         </div>
 </div>

@@ -10,6 +10,7 @@ import { DropdownBasic } from './dropdown/dropdown-basic';
 import { CardComponent } from './card/card.component';
 import { NgbdModalBasic } from './modal/modal-basic';
 import { NgbdRatingConfig } from './rating/rating-component';
+import { Filter } from './filter.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { NgbdRatingConfig } from './rating/rating-component';
     BrowserModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [Filter],
   bootstrap: [AppComponent]
 })
 export class AppModule { 

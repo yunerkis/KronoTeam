@@ -1,14 +1,27 @@
 import {Component, Input} from '@angular/core';
 import {NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+import { Filter } from '../filter.service';
 
 @Component({
   selector: 'ngbd-modal-basic',
   templateUrl: './modal-basic.html'
 })
 export class NgbdModalBasic {
+  @Input() store: {
+    name: String,
+    sector: String,
+    logo: String,
+    rating: String,
+    description: String
+  }
   closeResult: string;
 
-  constructor(private modalService: NgbModal, public activeModal: NgbActiveModal) {}
+  constructor(private modalService: NgbModal, public activeModal: NgbActiveModal, public storeService: Filter) {
+    this.store = storeService.getSelected();
+    storeService.onSelect.subscribe((value) => {
+      this.store = value;
+    })
+  }
 
   close() {
     this.activeModal.dismiss()

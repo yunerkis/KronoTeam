@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Filter } from '../filter.service';
 
 @Component({
   selector: 'app-nav',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
+  constructor(public filter: Filter) {}
 
-  constructor() { }
+  triggerEvent(event) {
+    console.log(event.target.value)
+    this.filter.filterElementsByName(event.target.value)
+  }
 
   ngOnInit() {
   }

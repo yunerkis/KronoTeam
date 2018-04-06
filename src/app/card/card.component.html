@@ -1,13 +1,15 @@
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Nombre del Comercio</h5>
-      <img class="card-img-top" src="..." alt="Card image cap">
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Categoria : aqui va la categoria</li>
-      <li class="list-group-item">Rating: <ngb-rating [rate]="3"></ngb-rating> </li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link" (click)="open(content)">Detalles</a>
-    </div>
+<div class="col order-12">
+  <div class="card" style="width: 18rem; margin-bottom:40px;">
+      <div class="card-body">
+        <h5 class="card-title">{{store.name}}</h5>
+        <img class="card-img-top" src="{{store.logo}}" alt="Card image cap">
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Categoria : {{store.sector}}</li>
+        <li class="list-group-item">Rating: <ngb-rating [rate]="store.rating"></ngb-rating> </li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link" (click)="open(content)">Detalles</a>
+      </div>
+  </div>
 </div>

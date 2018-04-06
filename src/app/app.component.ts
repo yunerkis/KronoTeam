@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import stores from '../mocks/storage'
+import { Filter } from './filter.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  stores;
+  constructor(public filter: Filter) {
+    this.stores = filter.getStores()
+    filter.valueChange.subscribe((value) => {
+      this.stores = value
+    })
+  }
+  
 };

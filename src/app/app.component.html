@@ -1,8 +1,9 @@
 <app-nav></app-nav>
-<div class="container">
   <div class="starter-template">
       <ngbd-dropdown-basic></ngbd-dropdown-basic>
-      <card-component></card-component>
+      <div class="row">
+        <card-component *ngFor="let store of stores" [store]="store">
+        </card-component>
+      </div>
   </div>
-</div>
 <app-footer></app-footer>

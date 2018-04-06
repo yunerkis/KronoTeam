@@ -7,7 +7,7 @@ import {NgbRatingConfig} from '@ng-bootstrap/ng-bootstrap';
   providers: [NgbRatingConfig] // add NgbRatingConfig to the component providers
 })
 export class NgbdRatingConfig {
-  constructor(config: NgbRatingConfig) {
+    constructor(config: NgbRatingConfig) {
     // customize default values of ratings used by this component tree
     config.max = 5;
     config.readonly = false;
