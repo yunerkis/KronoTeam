@@ -4,7 +4,8 @@ import { Filter } from '../filter.service';
 
 @Component({
   selector: 'ngbd-modal-basic',
-  templateUrl: './modal-basic.html'
+  templateUrl: './modal-basic.html',
+  styleUrls: ['./modal-basic.scss']
 })
 export class NgbdModalBasic {
   @Input() store: {

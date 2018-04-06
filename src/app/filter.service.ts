@@ -7,6 +7,8 @@ import {orderBy} from 'lodash'
 export class Filter {
 
 stores= stores.commerces;
+searchName = new RegExp('');
+searchSector = '';
 orderBy = 'asc' ;
 selected;
 valueChange: EventEmitter<object> = new EventEmitter<object>();
@@ -26,13 +28,16 @@ constructor() { }
 
   filterElementsByName(name) { 
     const regex = new RegExp(name, 'i');
-    this.stores = stores.commerces.filter((item) => regex.test(item.name))
+    this.searchName = regex
+    this.stores = stores.commerces.filter((item) => regex.test(item.name) && (this.searchSector === item.sector || !this.searchSector.length))
     this.valueChange.emit(orderBy(this.stores, ['rating'],[orderBy]))
   }
   
   filterElementsBySector(sector) { 
-    const regex = new RegExp(sector, 'i');
-    this.stores = this.stores.filter((item) => regex.test(item.sector))
+    this.stores = stores.commerces.filter(
+      (item) => (sector === item.sector || !sector.length) && this.searchName.test(item.name)
+    )
+    this.searchSector = sector;
     this.valueChange.emit(orderBy(this.stores, ['rating'],[orderBy]))
   }
   selectStore(obj) {

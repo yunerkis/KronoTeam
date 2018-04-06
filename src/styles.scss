@@ -18,19 +18,16 @@ body {
 $button-color:blue;
 $button-hover:#fff;
 $button-hover2: #0d8686;
-$border-size:2px;
 $border-radius:8px;
 
 // button mixins
 @mixin button($icon, $color){
  color:$color;
- border:$border-size solid $color;
  &::before{
   content:$icon;
  }
  &:hover{
   background:$color;
-  border:$border-size solid $color;
  }
  &:active{
   background:darken($color, 10%);
@@ -39,7 +36,7 @@ $border-radius:8px;
 
 // .button styles
 .button{
-background-color: $button-hover;
+background-color: #0ca8a8;
 display:inline-block;
 text-align:center;
 text-decoration:none;
@@ -50,21 +47,12 @@ border-radius:5px;
   padding-right:.3em;
  }
  &:hover{
-  color:$button-hover;
+  color:$button-hover2;
  }
 }
 
-.button-2{
- @include button('\f01b', green);
-}
-.button-3{
- @include button('\f1b9', purple);
-}
 .button-4{
- @include button('\f105', teal);
-}
-.button-5{
- @include button('\f1b4', brown);
+ @include button('\f105',$button-hover);
 }
 
 .dropdown-item.active, .dropdown-item {

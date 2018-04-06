@@ -19,8 +19,7 @@ export class CardComponent {
   }
   constructor(private modalService: NgbModal, public storeServices: Filter) {}
     open(){
-      this.modalService.open(NgbdModalBasic)
-      console.log(this.store)
+      this.modalService.open(NgbdModalBasic, {size: 'lg'})
       this.storeServices.selectStore(this.store)
     }  
 }

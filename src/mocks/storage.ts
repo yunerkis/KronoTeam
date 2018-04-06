@@ -16,7 +16,7 @@ export default {
         }, 
         {
             "name":"Carrefour",
-            "logo":"../assets/images/Carrefour.svg.png",
+            "logo":"../assets/images/Carrefour.svg",
             "sector":"Ofertas",
             "rating":"4",
             "description":"Es la primera marca “retail” de Francia y la cuarta de Europa. Fue fundada en 1963 en París y ha logrado que su valor crezca hasta 10,229 millones de dólares. Tienen sucursales en Argentina, Brasil, Martinica, Bélgica, Italia, Grecia, Marruecos, China, India, Irak, Kuwait, y muchos países más."
