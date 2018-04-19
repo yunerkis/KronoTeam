@@ -5,7 +5,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
-import { FooterComponent } from './footer/footer.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 import { DropdownBasic } from './dropdown/dropdown-basic';
 import { CardComponent } from './card/card.component';
 import { NgbdModalBasic } from './modal/modal-basic';
@@ -17,7 +17,7 @@ import { Filter } from './filter.service';
   declarations: [
     AppComponent,
     NavComponent,
-    FooterComponent,
+    SidebarComponent,
     DropdownBasic,
     CardComponent,
     NgbdModalBasic,

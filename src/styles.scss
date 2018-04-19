@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-  padding-top: 5rem;
+  padding-top: 2rem;
   background-color: #efefef;
   font-family: 'Roboto', sans-serif !important;
   color: #616161 !important;
@@ -13,11 +13,19 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
+.cntr{
+  padding-left: 125px !important;
+}
+@media only screen and (max-width: 600px) {
+  .cntr{
+    padding-left: 60px !important;
+  }
+} 
 
 // button variables
 $button-color:blue;
 $button-hover:#fff;
-$button-hover2: #0d8686;
+$button-hover2: #212121;
 $border-radius:8px;
 
 // button mixins
@@ -36,7 +44,7 @@ $border-radius:8px;
 
 // .button styles
 .button{
-background-color: #0ca8a8;
+background-color: #212121;
 display:inline-block;
 text-align:center;
 text-decoration:none;

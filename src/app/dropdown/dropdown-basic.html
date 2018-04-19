@@ -1,6 +1,6 @@
 <div class="ng-padding">
     <div ngbDropdown class="d-inline-block">
-            <button class="btn button button-4" id="dropdownBasic1" ngbDropdownToggle>Categoría</button>
+            <button class="btn button button-4" id="dropdownBasic1" ngbDropdownToggle>Precio</button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" (click)="triggerSector('Tienda Mayorista')" >Tienda Mayorista</button>
             <button class="dropdown-item" (click)="triggerSector('Ofertas')" >Ofertas</button>
@@ -10,7 +10,14 @@
         </div>
     </div>
     <div ngbDropdown class="d-inline-block">
-            <button class="btn button button-4" id="dropdownBasic1" ngbDropdownToggle>Rating</button>
+            <button class="btn button button-4" id="dropdownBasic1" ngbDropdownToggle>Disponibilidad</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button class="dropdown-item" (click)="triggerRating('asc')" >Ascendente</button>
+            <button class="dropdown-item" (click)="triggerRating('desc')" >Descendente</button>
+        </div>
+    </div>
+    <div ngbDropdown class="d-inline-block">
+            <button class="btn button button-4" id="dropdownBasic1" ngbDropdownToggle>Cantidad</button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" (click)="triggerRating('asc')" >Ascendente</button>
             <button class="dropdown-item" (click)="triggerRating('desc')" >Descendente</button>

@@ -15,7 +15,7 @@ valueChange: EventEmitter<object> = new EventEmitter<object>();
 onSelect: EventEmitter<object> = new EventEmitter<object>();
 constructor() { }
   getStores() {
-      return orderBy(this.stores, ['rating'],[orderBy])
+    return orderBy(this.stores, ['rating'],[orderBy])
   }
 
   getOrder() {
