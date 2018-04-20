@@ -1,3 +1,20 @@
-.modal-add{
+$brand-info: #29B6F6;
+$brand-danger: #ef1c1c;
 
+
+.modal-add{
+    &:hover{
+        background-color:  #2196F3;
+    }
+    background-color: $brand-info;
+    color: white;
+    margin-top: 15px;
+}
+.modal-remove{
+    &:hover{
+        background-color: #ba0000;
+    }
+    background-color: $brand-danger;
+    color: white;
+    margin-top: 15px;
 }
