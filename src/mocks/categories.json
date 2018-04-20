@@ -1,11 +1,15 @@
 [
-    {
-        "category": "Higiene",
-        "subcategories": [
-            {
-                "name_higiene": "Higiene Bucal",
-                "name_jabones": "Jabones"
-            }
-        ]
-    }
+  {
+    "category": "Higiene",
+    "subcategories": [
+      {
+        "id": "1",
+        "name": "Higiene Bucal"
+      },
+      {
+        "id": "2",
+        "name": "Jabones"
+      }
+    ]
+  }
 ]

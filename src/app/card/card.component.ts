@@ -10,10 +10,10 @@ import { Filter } from '../filter.service';
 export class CardComponent {
   @Input() product: {
     name: String,
-    sector: String,
-    logo: String,
-    rating: String,
-    description: String
+    img: String,
+    price: String,
+    disponibilidad: String,
+    cantidad: String
   }
   constructor(public storeServices: Filter) {}
     open(){
