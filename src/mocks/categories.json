@@ -11,5 +11,13 @@
         "name": "Jabones"
       }
     ]
+  },{
+    "category": "Mascotas",
+    "subcategories": [
+      {
+        "id": "3",
+        "name": "Accesorios"
+      }
+    ]
   }
 ]
