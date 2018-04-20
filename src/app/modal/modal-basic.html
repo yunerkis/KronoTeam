@@ -5,32 +5,20 @@
     </button>
 </div>
 <div class="modal-body" style="height: 300px;overflow: auto;">
-   <div class="row">
+   <div class="row" *ngFor="let product of selected">
        <div class="col-6">
-            <img class="img-thumbnail" src="http://media.kronogroup.co.s3.amazonaws.com/Products/8032.jpg">
+         <img class="img-thumbnail" src="{{product.img}}">
        </div>
        <div class="col-6">
-           <h6>Nombre Producto</h6>
-           <h6>Cantidad: </h6>
+         <h6>{{product.name}}</h6>
+         <h6>Cantidad: {{product.cantidad}}</h6>
            <input id="" type="number" class="form-control" style="width: 80px;"/>
            <button class="btn modal-add"><i class="fa fa-plus"></i></button>
            <button class="btn modal-remove"><i class="fa fa-trash"></i></button>
        </div>
+       <hr>
    </div>
-   <hr>
-    <div class="row">
-        <div class="col-6">
-            <img class="img-thumbnail" src="http://media.kronogroup.co.s3.amazonaws.com/Products/8032.jpg">
-        </div>
-        <div class="col-6">
-            <h6>Nombre Producto</h6>
-            <h6>Cantidad: </h6>
-            <input id="" type="number" class="form-control" style="width: 80px;"/>
-            <button class="btn modal-add"><i class="fa fa-plus"></i></button>
-            <button class="btn modal-remove"><i class="fa fa-trash"></i></button>
-        </div>
-    </div>
 </div>
 <div class="modal-footer">
-    <div>Pagar Total: $4234234</div>
+    <div>Pagar Total: {{ total }}</div>
 </div>

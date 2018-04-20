@@ -17,7 +17,7 @@ export class CardComponent {
   }
   constructor(public storeServices: Filter) {}
     open(){
-      this.storeServices.selectStore(this.product)
+      this.storeServices.selectProduct(this.product)
     }
 }
 

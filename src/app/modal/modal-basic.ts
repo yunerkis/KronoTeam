@@ -8,8 +8,14 @@ import { Filter } from '../filter.service';
   styleUrls: ['./modal-basic.scss']
 })
 export class NgbdModalBasic {
+  selected = [];
+  total = 0;
 
   constructor(private modalService: NgbModal, public activeModal: NgbActiveModal, public storeService: Filter) {
+    this.selected = storeService.getSelected();
+    if(this.selected.length > 0) {
+      this.total = this.selected.length > 1 ? this.selected.reduce((prev, now) => parseFloat(prev.price || prev) + parseFloat( now.price )) : this.selected[0].price;
+    }
   }
 
   close() {

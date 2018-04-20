@@ -12,7 +12,7 @@ export class Filter {
   searchName = new RegExp('');
   searchSector = '';
   orderBy = 'asc' ;
-  selected;
+  selected = [];
   valueChange: EventEmitter<object> = new EventEmitter<object>();
   onSelect: EventEmitter<object> = new EventEmitter<object>();
 
@@ -49,10 +49,12 @@ export class Filter {
     this.searchSector = sector;
     this.valueChange.emit(orderBy(this.categories, ['rating'],[orderBy]))
   }
-  selectStore(obj) {
-    this.selected = obj;
+
+  selectProduct(obj) {
+    this.selected = this.selected.concat([obj]);
     this.onSelect.emit(this.selected)
   }
+
   changeOrder(order) {
     this.orderBy = order
     this.valueChange.emit(orderBy(this.categories, ['rating'],[order]))
