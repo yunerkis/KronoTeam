@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import stores from '../mocks/storage'
+import stores from '../mocks/categories.json'
 import { Filter } from './filter.service';
 
 @Component({

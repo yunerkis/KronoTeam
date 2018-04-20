@@ -9,7 +9,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { DropdownBasic } from './dropdown/dropdown-basic';
 import { CardComponent } from './card/card.component';
 import { NgbdModalBasic } from './modal/modal-basic';
-import { NgbdRatingConfig } from './rating/rating-component';
 import { Filter } from './filter.service';
 
 
@@ -20,8 +19,7 @@ import { Filter } from './filter.service';
     SidebarComponent,
     DropdownBasic,
     CardComponent,
-    NgbdModalBasic,
-    NgbdRatingConfig
+    NgbdModalBasic
   ],
   entryComponents: [NgbdModalBasic],
   imports: [
