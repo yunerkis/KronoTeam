@@ -21,6 +21,6 @@ export class CardComponent {
     open(){
       this.modalService.open(NgbdModalBasic, {size: 'lg'})
       this.storeServices.selectStore(this.store)
-    }  
+    }
 }
 

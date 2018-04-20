@@ -9,12 +9,11 @@ import { Filter } from './filter.service';
 })
 export class AppComponent {
   title = 'app';
-  stores;
+  products;
   constructor(public filter: Filter) {
-    this.stores = filter.getStores()
+    this.products = filter.getProducts()
     filter.valueChange.subscribe((value) => {
       this.stores = value
     })
   }
-  
 };
