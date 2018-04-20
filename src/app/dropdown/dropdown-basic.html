@@ -2,25 +2,26 @@
     <div ngbDropdown class="d-inline-block">
             <button class="btn button button-4" id="dropdownBasic1" ngbDropdownToggle>Precio</button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button class="dropdown-item" (click)="triggerSector('Tienda Mayorista')" >Tienda Mayorista</button>
-            <button class="dropdown-item" (click)="triggerSector('Ofertas')" >Ofertas</button>
-            <button class="dropdown-item" (click)="triggerSector('Almacen')" >Almacen</button>
-            <button class="dropdown-item" (click)="triggerSector('Supermercado')" >Supermercado</button>
+            <button class="dropdown-item" (click)="triggerSector('Tienda Mayorista')" >$1.000 - $5.000</button>
+            <button class="dropdown-item" (click)="triggerSector('Ofertas')" >$6.000 - $9.000</button>
+            <button class="dropdown-item" (click)="triggerSector('Almacen')" >$10.000 - $15.000</button>
+            <button class="dropdown-item" (click)="triggerSector('Supermercado')" >$16.000 - $20.000</button>
             <button class="dropdown-item" (click)="triggerSector('')" >Todos</button>
         </div>
     </div>
     <div ngbDropdown class="d-inline-block">
             <button class="btn button button-4" id="dropdownBasic1" ngbDropdownToggle>Disponibilidad</button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button class="dropdown-item" (click)="triggerRating('asc')" >Ascendente</button>
-            <button class="dropdown-item" (click)="triggerRating('desc')" >Descendente</button>
+            <button class="dropdown-item" (click)="triggerRating('asc')" >Disponible</button>
+            <button class="dropdown-item" (click)="triggerRating('desc')" >No Disponible</button>
         </div>
     </div>
     <div ngbDropdown class="d-inline-block">
             <button class="btn button button-4" id="dropdownBasic1" ngbDropdownToggle>Cantidad</button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button class="dropdown-item" (click)="triggerRating('asc')" >Ascendente</button>
-            <button class="dropdown-item" (click)="triggerRating('desc')" >Descendente</button>
+            <button class="dropdown-item" (click)="triggerRating('asc')" >1 - 5</button>
+            <button class="dropdown-item" (click)="triggerRating('desc')" >6 - 9</button>
+            <button class="dropdown-item" (click)="triggerRating('desc')" >10 - 20</button>
         </div>
     </div>
 </div>

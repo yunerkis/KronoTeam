@@ -3,112 +3,112 @@
         "name":"Listerine",
         "img":"../assets/images/listerine.jpg",
         "price":"$8.000",
-        "disponibilidad":"disponible",
+        "disponibilidad":"Disponible",
         "cantidad":"5"
         
     },{
         "name":"Oral-B",
         "img":"../assets/images/enjuaguejpg",
         "price":"$9.500",
-        "disponibilidad":"disponible",
+        "disponibilidad":"Disponible",
         "cantidad":"3"
         
     },{
         "name":"Cepillo de Dientes",
         "img":"../assets/images/cepillodental.jpg",
         "price":"$2.000",
-        "disponibilidad":"no disponible",
+        "disponibilidad":"Agotado",
         "cantidad":"0"
         
     },{
         "name":"Enjuague Fluor",
         "img":"../assets/images/fluor.jpg",
         "price":"$5.000",
-        "disponibilidad":"no disponible",
+        "disponibilidad":"Agotado",
         "cantidad":"0"
         
     },{
         "name":"Palmolive",
         "img":"../assets/images/JABPALM1.jpg",
         "price":"$3.000",
-        "disponibilidad":"disponible",
+        "disponibilidad":"Disponible",
         "cantidad":"5"
         
     },{
         "name":"Dove Baby",
         "img":"../assets/images/babydove.jpg",
         "price":"$7.000",
-        "disponibilidad":"disponible",
+        "disponibilidad":"Disponible",
         "cantidad":"6"
         
     },{
         "name":"Dove Baby Liquido",
         "img":"../assets/images/babyliquid.jpg",
         "price":"$8.000",
-        "disponibilidad":"no disponible",
+        "disponibilidad":"Agotado",
         "cantidad":"0"
         
     },{
         "name":"Escudo",
         "img":"../assets/images/escudo.jpg",
         "price":"$4.000",
-        "disponibilidad":"no disponible",
+        "disponibilidad":"Agotado",
         "cantidad":"0"
         
     },{
         "name":"Desodorante Dove",
         "img":"../assets/images/desodo.jpg",
         "price":"$5.000",
-        "disponibilidad":"disponible",
+        "disponibilidad":"Disponible",
         "cantidad":"7"
         
     },{
         "name":"Nivea For Men",
         "img":"../assets/images/hnivea.jpg",
         "price":"$4.000",
-        "disponibilidad":"no disponible",
+        "disponibilidad":"Agotado",
         "cantidad":"0"
         
     },{
         "name":"Balance",
         "img":"../assets/images/balance.jpg",
         "price":"$3.000",
-        "disponibilidad":"no disponible",
+        "disponibilidad":"Agotado",
         "cantidad":"0"
         
     },{
         "name":"Kaiak",
         "img":"../assets/images/kaiak.jpg",
         "price":"$6.000",
-        "disponibilidad":"disponible",
+        "disponibilidad":"Disponible",
         "cantidad":"9"
         
     },{
         "name":"Arena para Gatos",
         "img":"../assets/images/arena.jpg",
         "price":"8.000",
-        "disponibilidad":"disponible",
+        "disponibilidad":"Disponible",
         "cantidad":"10"
         
     },{
         "name":"Gimnasio para Gatos",
         "img":"../assets/images/gimnasio.jpg",
         "price":"$20.000",
-        "disponibilidad":"no disponible",
+        "disponibilidad":"Agotado",
         "cantidad":"3"
         
     },{
         "name":"Bebedero",
         "img":"../assets/images/bebedero.jpg",
         "price":"$15.000",
-        "disponibilidad":"disponible",
+        "disponibilidad":"Disponible",
         "cantidad":"5"
         
     },{
         "name":"Bebedero Drinkwell",
         "img":"../assets/images/bebedero2.jpg",
         "price":"$18.000",
-        "disponibilidad":"no disponible",
+        "disponibilidad":"Agotado",
         "cantidad":"4"
         
     }

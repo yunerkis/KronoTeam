@@ -12,7 +12,7 @@ export class NavComponent implements OnInit {
   ngOnInit() {
   }
   open(){
-    this.modalService.open(NgbdModalBasic, {size: 'lg'})
+    this.modalService.open(NgbdModalBasic)
   }
 
 }
