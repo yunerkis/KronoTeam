@@ -1,5 +1,5 @@
 import { Injectable, EventEmitter } from '@angular/core';
-import {orderBy} from 'lodash'
+import {orderBy, uniqBy} from 'lodash'
 
 import * as categories from '../mocks/categories.json'
 import * as products from '../mocks/products.json'
@@ -51,7 +51,12 @@ export class Filter {
   }
 
   selectProduct(obj) {
-    this.selected = this.selected.concat([obj]);
+    this.selected = uniqBy(this.selected.concat([obj]), (e) => e.name);
+    this.onSelect.emit(this.selected)
+  }
+
+  removeProduct(obj) {
+    this.selected = this.selected.filter(item => item.name !== obj.name);
     this.onSelect.emit(this.selected)
   }
 
