@@ -4,112 +4,128 @@
         "img":"../assets/images/listerine.jpg",
         "price":"8000",
         "disponibilidad":"Disponible",
-        "cantidad":"5"
+        "cantidad":"5",
+        "category":"Higiene Bucal"
         
     },{
         "name":"Oral-B",
         "img":"../assets/images/enjuaguejpg",
         "price":"9000",
         "disponibilidad":"Disponible",
-        "cantidad":"3"
+        "cantidad":"3",
+        "category":"Higiene Bucal"        
         
     },{
         "name":"Cepillo de Dientes",
         "img":"../assets/images/cepillodental.jpg",
         "price":"2000",
         "disponibilidad":"Agotado",
-        "cantidad":"0"
+        "cantidad":"0",
+        "category":"Higiene Bucal"        
         
     },{
         "name":"Enjuague Fluor",
         "img":"../assets/images/fluor.jpg",
         "price":"5000",
         "disponibilidad":"Agotado",
-        "cantidad":"0"
+        "cantidad":"0",
+        "category":"Higiene Bucal"        
         
     },{
         "name":"Palmolive",
         "img":"../assets/images/JABPALM1.jpg",
         "price":"3000",
         "disponibilidad":"Disponible",
-        "cantidad":"5"
+        "cantidad":"5",
+        "category":"Jabones"
         
     },{
         "name":"Dove Baby",
         "img":"../assets/images/babydove.jpg",
         "price":"7000",
         "disponibilidad":"Disponible",
-        "cantidad":"6"
+        "cantidad":"6",
+        "category":"Jabones"        
         
     },{
         "name":"Dove Baby Liquido",
         "img":"../assets/images/babyliquid.jpg",
         "price":"8000",
         "disponibilidad":"Agotado",
-        "cantidad":"0"
+        "cantidad":"0",
+        "category":"Jabones"        
         
     },{
         "name":"Escudo",
         "img":"../assets/images/escudo.jpg",
         "price":"4000",
         "disponibilidad":"Agotado",
-        "cantidad":"0"
+        "cantidad":"0",
+        "category":"Jabones"        
         
     },{
         "name":"Desodorante Dove",
         "img":"../assets/images/desodo.jpg",
         "price":"5000",
         "disponibilidad":"Disponible",
-        "cantidad":"7"
+        "cantidad":"7",
+        "category":"Desodorante"        
         
     },{
         "name":"Nivea For Men",
         "img":"../assets/images/hnivea.jpg",
         "price":"4000",
         "disponibilidad":"Agotado",
-        "cantidad":"0"
+        "cantidad":"0",
+        "category":"Desodorante"        
         
     },{
         "name":"Balance",
         "img":"../assets/images/balance.jpg",
         "price":"3000",
         "disponibilidad":"Agotado",
-        "cantidad":"0"
+        "cantidad":"0",
+        "category":"Desodorante"                
         
     },{
         "name":"Kaiak",
         "img":"../assets/images/kaiak.jpg",
         "price":"6000",
         "disponibilidad":"Disponible",
-        "cantidad":"9"
+        "cantidad":"9",
+        "category":"Desodorante"                
         
     },{
         "name":"Arena para Gatos",
         "img":"../assets/images/arena.jpg",
         "price":"8000",
         "disponibilidad":"Disponible",
-        "cantidad":"10"
+        "cantidad":"10",
+        "category":"Accesorios"                        
         
     },{
         "name":"Gimnasio para Gatos",
         "img":"../assets/images/gimnasio.jpg",
         "price":"20000",
         "disponibilidad":"Agotado",
-        "cantidad":"3"
+        "cantidad":"3",
+        "category":"Accesorios"                        
         
     },{
         "name":"Bebedero",
         "img":"../assets/images/bebedero.jpg",
         "price":"15000",
         "disponibilidad":"Disponible",
-        "cantidad":"5"
+        "cantidad":"5",
+        "category":"Accesorios"                        
         
     },{
         "name":"Bebedero Drinkwell",
         "img":"../assets/images/bebedero2.jpg",
         "price":"18000",
         "disponibilidad":"Agotado",
-        "cantidad":"4"
+        "cantidad":"4",
+        "category":"Accesorios"                        
         
     }
 ]

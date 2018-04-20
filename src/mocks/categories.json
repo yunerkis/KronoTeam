@@ -9,13 +9,17 @@
       {
         "id": "2",
         "name": "Jabones"
+      },
+      {
+        "id": "3",
+        "name": "Desodorante"
       }
     ]
   },{
     "category": "Mascotas",
     "subcategories": [
       {
-        "id": "3",
+        "id": "4",
         "name": "Accesorios"
       }
     ]
