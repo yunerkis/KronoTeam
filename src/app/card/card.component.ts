@@ -1,6 +1,4 @@
 import {Component, Input} from '@angular/core';
-import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
-import { NgbdModalBasic } from '../modal/modal-basic';
 import { Filter } from '../filter.service';
 
 
@@ -17,9 +15,8 @@ export class CardComponent {
     rating: String,
     description: String
   }
-  constructor(private modalService: NgbModal, public storeServices: Filter) {}
+  constructor(public storeServices: Filter) {}
     open(){
-      this.modalService.open(NgbdModalBasic, {size: 'lg'})
       this.storeServices.selectStore(this.product)
     }
 }
