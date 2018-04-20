@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(public filter: Filter) {
     this.products = filter.getProducts()
     filter.valueChange.subscribe((value) => {
-      this.stores = value
+      this.products = value
     })
   }
 };

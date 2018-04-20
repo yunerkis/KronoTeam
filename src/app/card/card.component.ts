@@ -10,7 +10,7 @@ import { Filter } from '../filter.service';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-  @Input() store: {
+  @Input() product: {
     name: String,
     sector: String,
     logo: String,
@@ -20,7 +20,7 @@ export class CardComponent {
   constructor(private modalService: NgbModal, public storeServices: Filter) {}
     open(){
       this.modalService.open(NgbdModalBasic, {size: 'lg'})
-      this.storeServices.selectStore(this.store)
+      this.storeServices.selectStore(this.product)
     }
 }
 
