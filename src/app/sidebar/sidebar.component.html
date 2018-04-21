@@ -1,78 +1,27 @@
-<html>
-  <head>
- 
-  </head>
-  <body>
-      <div class="area"></div>
-      <nav class=" ">
-            <ul class="categories-list main-menu">
-                <li class="categories-list__item" style="margin-top: 20px;margin-bottom: -20px;">
-                    <a href="#">
-                        <i class="fa fa-angle-right"></i>
-                        <span class="nav-text">
-                            Dashboard
-                        </span>
-                    </a>
-                    <label class="categories-list__label">
-                        <input name="accordion-1" type="checkbox" class="categories-list__input">
-                        <span class="plus">+</span>
-                        <span class="minus">-</span>
-                        <ul class="categories-list__sub-categories-list">
-                        <li class="categories-list__item">
-                            <a href="#" class="link">
-                                <span>Accesories</span>
-                            </a>
-                            <label class="categories-list__label-test">
-                                <input name="accordion-1" type="checkbox" class="categories-list__input">
-                                <span class="plus">+</span>
-                                <span class="minus">-</span>
-                                <ul class="categories-list__sub-categories-list">
-                                    <li>
-                                        <a href="#" class="link two-link">
-                                            <span>Bags</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </label>
-                        </li>
-                        </ul>
-                        </label>
-                </li>
-                <li class="categories-list__item">
-                        <a href="#">
-                            <i class="fa fa-angle-right"></i>
-                            <span class="nav-text">
-                                Dashboard
-                            </span>
-                        </a>
-                        <label class="categories-list__label">
-                            <input name="accordion-1" type="checkbox" class="categories-list__input">
-                            <span class="plus">+</span>
-                            <span class="minus">-</span>
-                            <ul class="categories-list__sub-categories-list">
-                                <li class="categories-list__item">
-                                    <a href="#" class="link">
-                                        <span>Accesories</span>
-                                    </a>
-                                    <label class="categories-list__label-test">
-                                        <input name="accordion-1" type="checkbox" class="categories-list__input">
-                                        <span class="plus">+</span>
-                                        <span class="minus">-</span>
-                                        <ul class="categories-list__sub-categories-list">
-                                            <li>
-                                                <a href="#" class="link two-link">
-                                                    <span>Bags</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </label>
-                                </li>
-                            </ul>
-                        </label>
-                    </li>
-            </ul>
-        </nav>
-  </body>
-    </html>
+<div class="area"></div>
+<nav class=" ">
+  <ul class="categories-list main-menu">
+    <li class="categories-list__item" style="margin-top: 20px;margin-bottom: -20px;" *ngFor="let category of categories">
+      <a href="#">
+        <i class="fa fa-angle-right"></i>
+        <span class="nav-text">
+          {{ category.category }}
+        </span>
+      </a>
+      <label class="categories-list__label">
+        <input name="accordion-1" type="checkbox" class="categories-list__input">
+        <span class="plus">+</span>
+        <span class="minus">-</span>
+        <ul class="categories-list__sub-categories-list">
+          <li class="categories-list__item" *ngFor="let subcategory of category.subcategories ">
+            <a href="#" class="link">
+              <span>{{subcategory.name}}</span>
+            </a>
+          </li>
+        </ul>
+      </label>
+    </li>
+  </ul>
+</nav>
 
-    
+
